@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ptBR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Videos</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <video class="video" src="assets/videos/macacos_fodas.mp4"
+            poster="assets/images/monke.jpg"></video>
+
+        <div class="controle">
+            <img class="btn" onclick="retroceder()" src="assets/images/time-past.png">
+            <img class="btn" onclick="desacelerar()" id="rewind" src="assets/images/rewind.png">
+            <img class="btn" onclick="stop()" src="assets/images/stop.png">
+            <img class="btn" onclick="play()" src="assets/images/play.png">
+            <img class="btn" onclick="pause()" src="assets/images/pause.png">
+            <img class="btn" onclick="acelerar()" src="assets/images/forward.png">
+            <img class="btn" onclick="avancar()" src="assets/images/time-forward.png">
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+<!-- 
+Atributos da tag video
+
+src: diretório do vídeo a ser exibido
+controls: habilita os controles do vídeo
+autoplay: da o play assim que carregar a página
+muted: inicia o video sem som
+loop: roda o vídeo em loop
+poster: seleciona a thumbnail
+preload: carregar o video assim que a página carregar (auto, metadata, none)
+        
+-->
